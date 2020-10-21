@@ -1,26 +1,36 @@
 {% extends 'base.html.twig' %}
 {% block header %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar</a>
-
+        <div class="logo">
+            <a class="navbar-brand ml-2" href="{{ path('home') }}"><img src="{{ asset('build/images/logo.png') }}" height="100" width="100" alt="logo_ressources" class="logo ressources"></a>
+        </div>
+        <div class="ml-5 pr-4">
+        <button type="button" class="btn btn-outline-info mx-2">Se connecter</button>
+        <button type="button" class="btn btn-outline-info">S'inscrire</button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <div class="elementsnavtxt mx-5">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-5 mr-5 pr-5">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="effecthover nav-link" href="#">Ressources <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                <li class="nav-item active">
+                    <a class="effecthover nav-link ml-5 mr-5" href="#">Jeux<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <li class="nav-item active">
+                    <a class="effecthover nav-link ml-2" href="#">Nous Contacter<span class="sr-only">(current)</span></a>
                 </li>
+
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
+                <a class="nav-link text-dark m-x2 ml-5" href="#"><i class="far fa-envelope fa-lg"></i>
+                </a>
+                <a class="nav-link text-warning mr-2" href="#"><i class="far fa-bell fa-lg"></i>
+                </a>
+
+            <form class="form-inline my-2 my-lg-0 pl-5">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search something here" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>
     </nav>
