@@ -1,42 +1,58 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~@fortawesome/fontawesome-free/css/all.css";
-@font-face {font-family: "Beaufort-Bold";
-    src: url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.eot");
-    src: url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.svg#BeaufortW01-Bold") format("svg");}
+
+@font-face {
+  font-family: "Beaufort-Bold";
+  src: url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.eot");
+  src: url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.svg#BeaufortW01-Bold") format("svg");
+}
+
 body {
-    background-color: lightgray;
-    /**font-family: 'Beaufort-Bold'**/
+  background-color: lightgray;
+  /**font-family: 'Beaufort-Bold'**/
 }
+
 nav {
-    font-size: 20px;
+  font-size: 20px;
 }
+
 .colorme {
-    //color: darkcyan !important;
+  //color: darkcyan !important;
 }
+
 .effecthover {
-    border-bottom: 2px solid transparent;
-    border-top: 2px solid transparent;
-    height: 50px;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  height: 50px;
 
 }
+
 .effecthover:hover {
-    border-bottom: 2px solid currentColor;
-    border-top: 2px solid currentColor;
-    color: darkcyan !important;
-    //padding-bottom: 2px;
-    height: 50px;
+  border-bottom: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  color: darkcyan !important;
+  //padding-bottom: 2px;
+  height: 50px;
 }
+
 .effecthover:hover {
-    color: darkcyan !important;
+  color: darkcyan !important;
 }
+
 .navbar {
-    padding: 0;
+  padding: 0;
 }
+
 .navbar-brand {
-    padding: 0;
-    margin: 0 !important;
+  padding: 0;
+  margin: 0 !important;
+}
+
+#accroche .btn-create-account:hover {
+  color: darkcyan;
+  background-color: white;
 }

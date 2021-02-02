@@ -12,8 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b6ef5501-39b1-4f40-9a12-635c63a1f34f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/CESI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CESI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+=======
+>>>>>>> 2dd94c0d061b8efe94a2a81b73ccb4972f5bfeca
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
