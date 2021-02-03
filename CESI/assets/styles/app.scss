@@ -20,10 +20,6 @@ nav {
   font-size: 20px;
 }
 
-.colorme {
-  //color: darkcyan !important;
-}
-
 .effecthover {
   border-bottom: 2px solid transparent;
   border-top: 2px solid transparent;
@@ -48,6 +44,7 @@ nav {
 }
 
 .navbar-brand {
+
   padding: 0;
   margin: 0 !important;
 }
@@ -73,3 +70,23 @@ nav {
 #footer .reseau-insta:hover {
     color: #E1306C !important;
 }
+
+// JUMBOTRON
+#jumbotron {
+    margin : 0;
+    padding : 0;
+    background : url('../images/jumbotron.png') center;
+    height : 500px; 
+    background-size : cover;
+}
+  
+#jumbotron .jumbotronTransparent {
+    background-color : rgba(255, 255, 255, 0.2); 
+    height : 500px;
+}
+  
+#jumbotron .h1Jumbotron {
+    text-align : center; 
+    padding-top : 70px;
+}
+
