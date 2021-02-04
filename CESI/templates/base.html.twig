@@ -9,9 +9,12 @@
     </head>
     <body>
     {% block header %}{% endblock %}
-        {% block body %}{% endblock %}
+    {% block jumbotron %}{% endblock %}
+    {% block news %}{% endblock %}
+    {% block accroche %}{% endblock %}
     {% block footer %}{% endblock %}
-        {% block javascripts %}
+
+    {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </body>
