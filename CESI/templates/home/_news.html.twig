@@ -6,9 +6,10 @@
 {# voir pour une comm avec une bdd #}
 {# {%set test = "Sébou"%} #}
 <div id="home_news" class="pt-5" >
-<hr class="mt-2 mb-3 " />
-<div class="container-fluid">
-<h2 align="center" > Ressources les plus commentées </h2> 
+
+<div class="container-fluid bg-white" >
+ <hr class="mt-2 mb-3 " /> 
+<h2 align="center" > Les Ressources les plus commentées de la semaine !</h2> 
 <div class="row text-center justify-content-center mt-5">
 
 {# boucle a partir d ici #}
@@ -16,24 +17,26 @@
 
   <div ><i class="medaille-1 fas fa-medal"></i> </div>
   
-<?php $test = "vsjogsjgsjs";?>
 
-{{%set test = <?php $test ?>%}}
 
-  
-    <div class="card">
+
+
+  {# border color #}
+    <div class="card bg-light" >
    
-      <div class="card-body">
+      <div class="card-body " width=200 height=200>
 
       
         <h5 class="card-title">L'OL meilleur equipe du mooonde !</h5>
-        <p class="card-text">nsjgngrio</p>
-        <p class="card-text">publiée par : {{test}}</p>
+        <p class="card-text " >nsjgngrio</p>
+        <p class="card-text">publiée par : moi</p>
         <a href="#">  <img class="rounded-circle" src="{{ asset('build/images/ol.png') }}" alt="Ressource tendances" height=200 > </a>
         <!-- <a href="#" class="btn btn-primary">Lien ressource</a>-->
+        
       </div>
     </div>
   </div>
+
 
   {# boucle for fini ici #}
   <div class="col-3" >
@@ -41,7 +44,7 @@
   <div ><i class="medaille-2 fas fa-medal"></i> </div>
 
    
-    <div class="card" >
+    <div class="card bg-light" >
     
       <div class="card-body">
         <h5 class="card-title">Les knicks éclaté au sool !</h5>
@@ -57,17 +60,19 @@
   <div ><i class="medaille-3 fas fa-medal"></i> </div>
 
    
-    <div class="card">
+    <div class="card bg-light">
     
       <div class="card-body">
-        <h5 class="card-title" >La troisième ressource la plus commentée !</h5>
+        <h5 class="card-title" >La troisième ressource la plus commegughj bbhntée !</h5>
         <p class="card-text">Nom ressources</p>
         <p class="card-text">Auteur</p>
         <a href="#">  <img class="rounded-circle" src="{{ asset('build/images/logo.png') }}" alt="Ressource tendances" height=200> </a>
         <!-- <a href="#" class="btn btn-primary">Lien ressource</a> -->
       </div>
     </div>
+    <div class="pt-5 ">
   </div>
+  
 </div>
 </div>
 </div>

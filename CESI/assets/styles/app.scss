@@ -43,11 +43,11 @@ nav {
 
 // PARTIE NEWS
 #home_news .medaille-1{
-    color :rgb(202, 148, 1)
+    //color :rgb(202, 148, 1)
 }
 
 #home_news .medaille-2{
-    color :rgb(128, 128, 128)
+    color :rgb(124, 124, 124)
 }
 
 #home_news .medaille-3{
@@ -55,11 +55,16 @@ nav {
 }
 
 #home_news .card{
-    border-radius: 50%;
+    border-radius: 20%;
+    
 }
 
-#home_news .rounded-circle{
-    width: 40;
-    height: 40;
-    color :black;
+// #home_news .rounded-circle{
+//     width: 40;
+//     height: 40;
+//     color :black;
+// }
+
+#home_news .card{
+    background-color: black!important;
 }
