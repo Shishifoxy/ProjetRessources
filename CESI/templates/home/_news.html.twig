@@ -1,0 +1,81 @@
+
+
+{% block news %} 
+
+{# faire une boucle pour afficher les 3 ressources  #}
+{# voir pour une comm avec une bdd #}
+{# {%set test = "Sébou"%} #}
+<div id="home_news" class="pt-5" >
+
+<div class="container-fluid bg-white" >
+ <hr class="mt-2 mb-3 " /> 
+<h2 align="center" > Les Ressources les plus commentées de la semaine !</h2> 
+<div class="row text-center justify-content-center mt-5">
+
+{# boucle a partir d ici #}
+  <div class="col-3">
+
+  <div ><i class="medaille-1 fas fa-medal"></i> </div>
+  
+
+
+
+
+  {# border color #}
+    <div class="card bg-light" >
+   
+      <div class="card-body " width=200 height=200>
+
+      
+        <h5 class="card-title">L'OL meilleur equipe du mooonde !</h5>
+        <p class="card-text " >nsjgngrio</p>
+        <p class="card-text">publiée par : moi</p>
+        <a href="#">  <img class="rounded-circle" src="{{ asset('build/images/ol.png') }}" alt="Ressource tendances" height=200 > </a>
+        <!-- <a href="#" class="btn btn-primary">Lien ressource</a>-->
+        
+      </div>
+    </div>
+  </div>
+
+
+  {# boucle for fini ici #}
+  <div class="col-3" >
+
+  <div ><i class="medaille-2 fas fa-medal"></i> </div>
+
+   
+    <div class="card bg-light" >
+    
+      <div class="card-body">
+        <h5 class="card-title">Les knicks éclaté au sool !</h5>
+        <p class="card-text">Franchement c'est chaud...</p>
+        <p class="card-text">publiée par :<?php $test ;?></p>
+        <a href="#">  <img class="rounded-circle" src="{{ asset('build/images/knicks.png') }}" alt="Ressource tendances" height=200> </a>
+        <!-- <a href="#" class="btn btn-primary">Lien ressource</a> -->
+      </div>
+    </div>
+  </div>
+  <div class="col-3">
+
+  <div ><i class="medaille-3 fas fa-medal"></i> </div>
+
+   
+    <div class="card bg-light">
+    
+      <div class="card-body">
+        <h5 class="card-title" >La troisième ressource la plus commegughj bbhntée !</h5>
+        <p class="card-text">Nom ressources</p>
+        <p class="card-text">Auteur</p>
+        <a href="#">  <img class="rounded-circle" src="{{ asset('build/images/logo.png') }}" alt="Ressource tendances" height=200> </a>
+        <!-- <a href="#" class="btn btn-primary">Lien ressource</a> -->
+      </div>
+    </div>
+    <div class="pt-5 ">
+  </div>
+  
+</div>
+</div>
+</div>
+
+
+{% endblock %}
