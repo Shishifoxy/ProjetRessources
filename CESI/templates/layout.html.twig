@@ -1,4 +1,5 @@
 {% extends 'base.html.twig' %}
+
 {% block header %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="logo">
@@ -12,7 +13,7 @@
             <div class="elementsnavtxt mx-5">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-5 mr-5 pr-5">
                 <li class="nav-item active">
-                    <a class="effecthover nav-link" href="#">Ressources <span class="sr-only">(current)</span></a>
+                    <a class="effecthover nav-link" href="/consultation-ressource">Ressources <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="effecthover nav-link ml-5 mr-5" href="#">Jeux<span class="sr-only">(current)</span></a>
@@ -34,28 +35,4 @@
             </form>
         </div>
     </nav>
-{% endblock %}
-
-
-
-{% block accroche %}
-{% include "home/_accroche.html.twig" %}
-{% endblock %}
-
-
-{% block footer %}
-
-{% include 'home/_footer.html.twig' %}
-
-{% endblock %}
-
-{% block jumbotron %}
-    {% include 'home/_jumbotron.html.twig' %}
-{% endblock %}
-
-
-{% block news %}
-
-{% include 'home/_news.html.twig' %}
-
 {% endblock %}

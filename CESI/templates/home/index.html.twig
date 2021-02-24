@@ -1,7 +1,17 @@
-
 {% extends 'layout.html.twig' %}
 
+{% block jumbotron %}
+    {% include 'home/_jumbotron.html.twig' %}
+{% endblock %}
 
+{% block news %}
+    {% include 'home/_news.html.twig' %}
+{% endblock %}
 
+{% block accroche %}
+    {% include "home/_accroche.html.twig" %}
+{% endblock %}
 
-
+{% block footer %}
+    {% include 'home/_footer.html.twig' %}
+{% endblock %}

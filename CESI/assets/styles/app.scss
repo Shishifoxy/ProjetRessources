@@ -75,9 +75,11 @@ nav {
   height: 300px;
 }
 
+// CSS ACCROCHE
 #accroche{
   background-repeat: no-repeat;
   background-image: url('../images/img_fond_accroche.jpg');
+  background-size : cover;
 }
 
 #accroche .texte-accroche{
@@ -88,18 +90,11 @@ nav {
   padding-top: 70px;
 }
 
-// JUMBOTRON
+// CSS JUMBOTRON
 #jumbotron {
     margin : 0;
     padding : 0;
-    background : url('../images/jumbotron.png') center;
     height : 500px; 
-    background-size : cover;
-}
-  
-#jumbotron .jumbotronTransparent {
-    background-color : rgba(255, 255, 255, 0.2); 
-    height : 500px;
 }
   
 #jumbotron .h1Jumbotron {
@@ -107,3 +102,9 @@ nav {
     padding-top : 70px;
 }
 
+.jumbotron {
+  //background-color: transparent !important;
+  background-image: url('../images/jumbotron.png');
+  background-repeat: no-repeat;
+  background-size : cover;
+}
