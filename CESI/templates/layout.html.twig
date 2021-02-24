@@ -1,54 +1,14 @@
 {% extends 'base.html.twig' %}
-{% block header %}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="logo">
-            <a class="navbar-brand ml-2" href="{{ path('home') }}"><img src="{{ asset('build/images/logo.png') }}" height="90" width="90" alt="logo_ressources" class="logo ressources"></a>
-        </div>
-        <div class="ml-5 pr-4">
-        <button type="button" class="btn btn-outline-info mx-2">Se connecter</button>
-        <button type="button" class="btn btn-outline-info">S'inscrire</button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <div class="elementsnavtxt mx-5">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-5 mr-5 pr-5">
-                <li class="nav-item active">
-                    <a class="effecthover nav-link" href="#">Ressources <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="effecthover nav-link ml-5 mr-5" href="#">Jeux<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="effecthover nav-link ml-2" href="#">Nous Contacter<span class="sr-only">(current)</span></a>
-                </li>
-
-            </ul>
-            </div>
-                <a class="nav-link text-dark m-x2 ml-5" href="#"><i class="far fa-envelope fa-lg"></i>
-                </a>
-                <a class="nav-link text-warning mr-2" href="#"><i class="far fa-bell fa-lg"></i>
-                </a>
-
-            <form class="form-inline my-2 my-lg-0 pl-5">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search something here" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
-    </nav>
-{% endblock %}
-
-
-{% block accroche %}
-{% include "home/_accroche.html.twig" %}
-{% endblock %}
-
-
-{% block footer %}
-
-{% include 'home/_footer.html.twig' %}
-
-{% endblock %}
 
 {% block jumbotron %}
-    {% include 'home/_jumbotron.html.twig' %}
+{% endblock %}
+
+{% block accroche %}
+{% endblock %}
+
+{% block consultation_ressource %}
+{% endblock %}
+
+{% block footer %}
 {% endblock %}
 
