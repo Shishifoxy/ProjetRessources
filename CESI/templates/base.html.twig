@@ -10,15 +10,21 @@
 
     <body>
 
-    <!-- Home -->
+    <!-- Header -->
     {% block header %}{% endblock %}
+
+    <!-- Home -->
     {% block jumbotron %}{% endblock %}
     {% block news %}{% endblock %}
     {% block accroche %}{% endblock %}
-    {% block footer %}{% endblock %}
 
     <!-- Ressources -->
     {% block body_ressources %}{% endblock %}
+
+    <!-- Footer -->
+    {% block footer %}{% endblock %}
+
+
 
     {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
