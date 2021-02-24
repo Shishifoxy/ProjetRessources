@@ -1,3 +1,22 @@
 {% block body_ressources %}
-<p>klhkjh</p>
+
+<div id="listeRessources" class="container">
+  <form class="form-inline py-5 text-center" action="/recherche/" method="get">
+    <fieldset>    
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <select id="oCategorie" name="oCategorie" class="form-control categoriesRechercheRessources">
+            <option selected="selected" value="0">Catégorie</option>
+            <option value="1">...</option>
+          </select>
+        </div>
+        <input id="oSaisie" class="motsClesRechercheRessources" name="oSaisie" type="text" class="form-control" aria-label="Saisie de mots clés" placeholder="Mots-clés" required="required">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="submit">Recherche</button>
+        </div>
+      </div>
+    </fieldset> 
+  </form>
+</div>
+
 {% endblock %}
