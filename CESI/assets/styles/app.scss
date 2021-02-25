@@ -105,15 +105,74 @@ nav {
 .jumbotron {
   //background-color: transparent !important;
   background-image: url('../images/jumbotron.png');
+  background-position : center;
   background-repeat: no-repeat;
   background-size : cover;
 }
 
 // CSS LISTE RESSOURCES 
-#listeRessources .motsClesRechercheRessources {
-  width : 393px;
+#listeRessources .breadcrumb {
+  margin-bottom : 0px;
+  margin-block-end : 0px;
 }
 
-#listeRessources .form-inline .categoriesRechercheRessources {
-  width : 200px !important;
+#listeRessources .bgListeRessources {
+  background-repeat: no-repeat;
+  background-image: url('../images/img_fond_accroche.jpg');
+  background-size : cover;
+  margin-bottom : 50px;
+}
+
+@media (max-width : 1199px) {
+  #listeRessources .input-group {
+    display : block;
+  }
+
+  #listeRessources fieldset {
+    margin : auto;
+  }
+
+  #listeRessources .input-group-prepend {
+    margin : 5px 0px;
+  }
+
+  #listeRessources .form-inline .relationsRechercheRessources, #listeRessources .form-inline .categoriesRechercheRessources, #listeRessources .form-inline .ressourcesRechercheRessources {
+    width : 430px !important;
+  }
+
+  #listeRessources .motsClesRechercheRessources {
+    width : 430px;
+    padding-left : 15px;
+    height : 35px;
+  }
+
+  #listeRessources .btnRechercherRessources {
+    width : 430px;
+    margin-top : 15px;
+  }
+}
+
+@media (min-width : 1200px) {
+  #listeRessources .form-inline .relationsRechercheRessources, #listeRessources .form-inline .categoriesRechercheRessources, #listeRessources .form-inline .ressourcesRechercheRessources {
+    width : 230px !important;
+  }
+
+  #listeRessources .motsClesRechercheRessources {
+    width : 230px;
+  }
+
+  #listeRessources .btnRechercherRessources {
+    width : 194px;
+  }
+}
+
+#listeRessources .card-body {
+  padding: 1.25rem 1.25rem 0 1.25rem;
+}
+
+#listeRessources .dateListeRessources {
+  float : right;
+}
+#listeRessources .pagination {
+  padding : 25px;
 }

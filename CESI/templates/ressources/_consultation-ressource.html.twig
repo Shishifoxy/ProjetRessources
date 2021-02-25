@@ -1,22 +1,113 @@
 {% block body_ressources %}
 
-<div id="listeRessources" class="container">
-  <form class="form-inline py-5 text-center" action="/recherche/" method="get">
-    <fieldset>    
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <select id="oCategorie" name="oCategorie" class="form-control categoriesRechercheRessources">
-            <option selected="selected" value="0">Catégorie</option>
-            <option value="1">...</option>
-          </select>
-        </div>
-        <input id="oSaisie" class="motsClesRechercheRessources" name="oSaisie" type="text" class="form-control" aria-label="Saisie de mots clés" placeholder="Mots-clés" required="required">
-        <div class="input-group-append">
-          <button class="btn btn-primary" type="submit">Recherche</button>
-        </div>
-      </div>
-    </fieldset> 
-  </form>
-</div>
+<div id="listeRessources">
 
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Ressources</li>
+  </ol>
+</nav>
+
+  <div class="bgListeRessources">
+    <div class="container">
+      <h2 class="text-center pt-4"> CONSULTATION DES RESSOURCES</h2>
+      <p class="text-center pt-2"> Sur cette page vous pouvez consulter les ressources disponibles. Un système de recherche vous est proposé pour faciliter vos recherches. <br/>
+                                    Il vous est également possible de nous soumettre une idée de ressource en cliquant <a class="h5" href="#">ici</a>.
+      </p>
+      <form class="form-inline py-5 text-center" action="/recherche/" method="get">
+        <fieldset>    
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <select id="relationsRechercheRessources" name="relationsRechercheRessources" class="form-control relationsRechercheRessources">
+                <option hidden selected="selected" value="0">Type de relation</option>
+                <option value="1">Tous</option>
+                <option value="2">...</option>
+              </select>
+            </div>
+            <div class="input-group-prepend">
+              <select id="categoriesRechercheRessources" name="categoriesRechercheRessources" class="form-control categoriesRechercheRessources">
+                <option hidden selected="selected" value="0">Catégorie</option>
+                <option value="1">Toutes</option>
+                <option value="2">...</option>
+              </select>
+            </div>
+            <div class="input-group-prepend">
+              <select id="ressourcesRechercheRessources" name="ressourcesRechercheRessources" class="form-control ressourcesRechercheRessources">
+                <option hidden selected="selected" value="0">Type de ressource</option>
+                <option value="1">Tous</option>
+                <option value="2">...</option>
+              </select>
+            </div>
+            <div class="input-group-prepend">
+              <input id="motsClesRechercheRessources" class="motsClesRechercheRessources" name="motsClesRechercheRessources" type="text" class="form-control" aria-label="Saisie de mots clés" placeholder="Mots-clés" required="required">
+            </div>
+            <div class="input-group-append">
+              <button class="btn btn-primary btnRechercherRessources" type="submit">Recherche</button>
+            </div>
+          </div>
+        </fieldset> 
+      </form>
+    </div>
+  </div>
+
+  <div class="card border-dark mb-3 mx-4">
+    <h3 class="card-header">Titre de la première ressource</h3>
+    <div class="card-body text-dark">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text text-muted font-italic dateListeRessources"> Publiée le 10 Janvier 1965</p>
+    </div>
+    <div class="card-footer text-center">
+      <a href="#" class="btn btn-primary">Voir la ressource</a>
+    </div>
+  </div>
+
+  <div class="card border-dark mb-3 mx-4">
+    <h3 class="card-header">Titre de la seconde ressource</h3>
+    <div class="card-body text-dark">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text text-muted font-italic dateListeRessources"> Publiée le 10 Janvier 1965</p>
+    </div>
+    <div class="card-footer text-center">
+      <a href="#" class="btn btn-primary">Voir la ressource</a>
+    </div>
+  </div>
+
+  <div class="card border-dark mb-3 mx-4">
+    <h3 class="card-header">Titre de la troisième ressource</h3>
+    <div class="card-body text-dark">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text text-muted font-italic dateListeRessources"> Publiée le 10 Janvier 1965</p>
+    </div>
+    <div class="card-footer text-center">
+      <a href="#" class="btn btn-primary">Voir la ressource</a>
+    </div>
+  </div>
+
+  <div class="card border-dark mb-3 mx-4">
+    <h3 class="card-header">Titre de la quatrième ressource</h3>
+    <div class="card-body text-dark">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text text-muted font-italic dateListeRessources"> Publiée le 10 Janvier 1965</p>
+    </div>
+    <div class="card-footer text-center">
+      <a href="#" class="btn btn-primary">Voir la ressource</a>
+    </div>
+  </div>
+
+  <nav aria-label="pagination liste ressources">
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Précédent</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Suivant</a>
+      </li>
+    </ul>
+  </nav>
+
+</div>
 {% endblock %}
