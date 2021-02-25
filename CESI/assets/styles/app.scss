@@ -111,11 +111,13 @@ nav {
 }
 
 // CSS LISTE RESSOURCES 
+  // fil d'ariane
 #listeRessources .breadcrumb {
   margin-bottom : 0px;
   margin-block-end : 0px;
 }
 
+  // fonction recherche
 #listeRessources .bgListeRessources {
   background-repeat: no-repeat;
   background-image: url('../images/img_fond_accroche.jpg');
@@ -166,6 +168,7 @@ nav {
   }
 }
 
+  // liste des ressources
 #listeRessources .card-body {
   padding: 1.25rem 1.25rem 0 1.25rem;
 }
@@ -173,6 +176,39 @@ nav {
 #listeRessources .dateListeRessources {
   float : right;
 }
+
+  // pagination
 #listeRessources .pagination {
   padding : 25px;
+}
+
+// CSS SOUMETTRE RESSOURCES 
+  // fil d'ariane
+#soumettreRessources .breadcrumb {
+  margin-bottom : 0px;
+  margin-block-end : 0px;
+}
+
+  // présentation
+#soumettreRessources .bgSoumettreRessources {
+  background-repeat: no-repeat;
+  background-image: url('../images/img_fond_accroche.jpg');
+  background-size : cover;
+  margin-bottom : 50px;
+}
+
+#soumettreRessources .form-check-input {
+    margin-top : 12px;
+}
+
+#soumettreRessources .submitCategorie, #soumettreRessources .submitRessource {
+  float : right;
+}
+
+#soumettreRessources .radioRessource {
+  margin-top : 72px;
+}
+
+#soumettreRessources .titreRadioRessource {
+  margin-top : 60px;
 }

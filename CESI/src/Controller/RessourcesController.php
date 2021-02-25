@@ -26,4 +26,13 @@ class RessourcesController extends AbstractController
             'controller_name' => 'RessourcesController',
         ]);
     }
+
+    /**
+     * @Route("/soumettre-ressource", name="soumettre-ressource")
+     */
+    public function soumettre_ressources() {
+        return $this->render('ressources/_soumettre-ressource.html.twig', [
+            'controller_name' => 'RessourcesController',
+        ]);
+    }
 }

@@ -1,0 +1,115 @@
+{% extends 'layout.html.twig' %}
+
+{% block soumettre_ressources %}
+<div id="soumettreRessources" class="pb-5">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="#">Ressources</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Soumettre une ressource</li>
+        </ol>
+    </nav>
+
+    <div class="bgSoumettreRessources">
+        <div class="container">
+            <h2 class="text-center pt-4">SOUMETTRE UNE RESSOURCE OU CATEGORIE DE RESSOURCE</h2>
+            <p class="text-center pt-2 pb-4">Vous avez une idée qui nous permettrait d'améliorer la vie des citoyens ? Présentez-la nous ! <br/>
+                                        Pour cela il vous suffit simplement de remplir le formulaire suivant.<br/><br/>
+                                        Vous pouvez proposer une ressource complète ou simplement une catégorie qui vous intéresse. Choisissez l'option que vous désirez.<br/><br/>
+                                        Vous avez la possibilité de présenter autant de ressources ou catégories que vous souhaitez. Votre suggestion sera tout de même soumise
+                                        à l'approbation d'un modérateur.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-check">
+
+            <!-- Choix catégorie -->
+            <input class="form-check-input" type="radio" name="choixCategorieOuRessource" id="choixCategorie" value="choixCategorie" checked>
+            <label class="form-check-label" for="choixCategorie">
+                <h3 class="pb-3">Soumettre une catégorie de ressource</h3>
+            </label>
+            <form>
+                <div class="form-group row">
+                    <label for="nomCategorie" class="col-sm-4 col-form-label">Nom de la catégorie :</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="nomCategorie" placeholder="Catégorie">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="descriptionCategorie" class="col-sm-4 col-form-label">Description de la catégorie :</label>
+                    <div class="col-sm-8">
+                        <textarea class="form-control" id="descriptionCategorie" placeholder="Description"></textarea>
+                    </div>
+                </div>
+                <button class="btn btn-primary submitCategorie" type="submit">Soumettre la catégorie</button>
+            </form>
+
+            <!-- Choix ressource -->
+            <input class="form-check-input radioRessource" type="radio" name="choixCategorieOuRessource" id="choixRessource" value="choixRessource">
+            <label class="form-check-label" for="choixRessource">
+                <h3 class="titreRadioRessource pb-3">Soumettre une ressource</h3>
+            </label>
+            <form class="mb-5">
+                <div class="form-group row">
+                    <label for="nomRessource" class="col-sm-4 col-form-label">Nom de la ressource :</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="nomRessource" placeholder="Ressource">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="ressourceCategorie" class="col-sm-4 col-form-label">Catégorie :</label>
+                    <div class="col-sm-8">
+                        <select id="inputState" class="form-control">
+                            <option hidden selected>Choisissez la catégorie</option>
+                            <option>Catégorie 1</option>
+                            <option>Catégorie 2</option>
+                            <option>Catégorie 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lienRessource" class="col-sm-4 col-form-label">Lien de la ressource :</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="lienRessource" placeholder="Lien">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="descriptionCategorie" class="col-sm-4 col-form-label">Description de la catégorie</label>
+                    <div class="col-sm-8">
+                        <textarea class="form-control" id="descriptionCategorie" placeholder="Description"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="texteCategorie" class="col-sm-4 col-form-label">Texte de la catégorie</label>
+                    <div class="col-sm-8">
+                        <textarea class="form-control" id="texteCategorie" placeholder="Texte"></textarea>
+                    </div>
+                </div>
+                <button class="btn btn-primary submitRessource" type="submit">Soumettre la ressource</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+{% endblock %}
+
+{% block footer %}
+    {% include 'ressources/_footer.html.twig' %}
+{% endblock %}
