@@ -19,10 +19,10 @@ class RessourcesController extends AbstractController
     }
     
     /**
-     * @Route("/consultation-ressource/test", name="consultation-ressource")
+     * @Route("/liste-ressource/test", name="liste-ressource")
      */
-    public function consultation_ressources() {
-        return $this->render('ressources/_consultation-ressource.html.twig', [
+    public function liste_ressources() {
+        return $this->render('ressources/_liste-ressource.html.twig', [
             'controller_name' => 'RessourcesController',
         ]);
     }
@@ -32,6 +32,15 @@ class RessourcesController extends AbstractController
      */
     public function soumettre_ressources() {
         return $this->render('ressources/_soumettre-ressource.html.twig', [
+            'controller_name' => 'RessourcesController',
+        ]);
+    }
+
+    /**
+     * @Route("/page-ressource", name="page-ressource")
+     */
+    public function page_ressources() {
+        return $this->render('ressources/_page-ressource.html.twig', [
             'controller_name' => 'RessourcesController',
         ]);
     }

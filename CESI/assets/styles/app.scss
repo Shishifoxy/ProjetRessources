@@ -212,3 +212,35 @@ nav {
 #soumettreRessources .titreRadioRessource {
   margin-top : 60px;
 }
+
+// CSS PAGE RESSOURCE 
+  // fil d'ariane
+#pageRessources .breadcrumb {
+  margin-bottom : 0px;
+  margin-block-end : 0px;
+}
+
+  // background
+#pageRessources {
+  background-repeat: no-repeat;
+  background-image: url('../images/img_fond_accroche.jpg');
+  background-size : cover;
+}
+
+#pageRessources .commentaireRessource, #pageRessources .ressource {
+  background-color: azure;
+}
+
+  // ressource
+#pageRessources .datePageRessource {
+  float : right;
+}
+
+  // commentaires
+#pageRessources .fa-thumbs-down {
+  float : right;
+}
+
+#pageRessources .envoyerCommentaire {
+  float : right;
+}
