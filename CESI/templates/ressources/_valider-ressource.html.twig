@@ -1,0 +1,31 @@
+{% extends 'layout.html.twig' %}
+
+{% block valider_ressources %}
+
+<div id="validerRessources">
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+    <li class="breadcrumb-item"><a href="#">Administration</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Valider les ressources</li>
+  </ol>
+</nav>
+
+<div class="bgValiderRessources pb-3">
+    <div class="container">
+        <h2 class="text-center pt-4">VALIDER LES RESSOURCES</h2>
+        <p class="text-center pt-2"> Sur cette page vous pouvez consulter les ressources les ressources qui ont été proposées par les citoyens.
+                                        Libre à vous de les accepter ou de les refuser !
+        </p>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block footer %}
+    {% include 'ressources/_footer.html.twig' %}
+{% endblock %}

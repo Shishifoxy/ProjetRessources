@@ -44,4 +44,13 @@ class RessourcesController extends AbstractController
             'controller_name' => 'RessourcesController',
         ]);
     }
+
+    /**
+     * @Route("/valider-ressource", name="valider-ressource")
+     */
+    public function valider_ressources() {
+        return $this->render('ressources/_valider-ressource.html.twig', [
+            'controller_name' => 'RessourcesController',
+        ]);
+    }
 }
