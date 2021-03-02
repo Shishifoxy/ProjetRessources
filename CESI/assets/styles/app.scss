@@ -253,8 +253,12 @@ nav {
   }
   
     // background
-  #validerRessources {
+  #validerRessources .bgValiderRessources {
     background-repeat: no-repeat;
     background-image: url('../images/img_fond_accroche.jpg');
     background-size : cover;
+  }
+
+  #validerRessources table tbody {
+    border : solid 1px white;
   }
