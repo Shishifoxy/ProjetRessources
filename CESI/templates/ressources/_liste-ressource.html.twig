@@ -15,37 +15,42 @@
       <p class="text-center pt-2"> Sur cette page vous pouvez consulter les ressources disponibles. Un système de recherche vous est proposé pour faciliter vos recherches. <br/>
                                     Il vous est également possible de nous soumettre une idée de ressource en cliquant <a class="h5" href="/soumettre-ressource">ici</a>.
       </p>
-      <form class="form-inline py-5 text-center" action="/recherche/" method="get">
+      <form class="py-5" action="/recherche/" method="get">
         <fieldset>    
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <select id="relationsRechercheRessources" name="relationsRechercheRessources" class="form-control relationsRechercheRessources">
-                <option hidden selected="selected" value="0">Type de relation</option>
-                <option value="1">Tous</option>
-                <option value="2">...</option>
-              </select>
+          <div class="form-row">
+            <div class="form-group col-4">
+                <label for="relation" class="col-form-label-lg">Type de relation :</label>
+                <select id="relation" class="form-control" aria-label="Default select example" required>
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
             </div>
-            <div class="input-group-prepend">
-              <select id="categoriesRechercheRessources" name="categoriesRechercheRessources" class="form-control categoriesRechercheRessources">
-                <option hidden selected="selected" value="0">Catégorie</option>
-                <option value="1">Toutes</option>
-                <option value="2">...</option>
-              </select>
+
+            <div class="form-group col-4">
+                <label for="categories" class="col-form-label-lg">Catégories :</label>
+                <select id="categories" class="form-control" aria-label="Default select example" required>
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
             </div>
-            <div class="input-group-prepend">
-              <select id="ressourcesRechercheRessources" name="ressourcesRechercheRessources" class="form-control ressourcesRechercheRessources">
-                <option hidden selected="selected" value="0">Type de ressource</option>
-                <option value="1">Tous</option>
-                <option value="2">...</option>
-              </select>
+
+            <div class="form-group col-4">
+                <label for="types_ressources" class="col-form-label-lg">Type de ressources :</label>
+                <select id="types_ressources" class="form-control" aria-label="Default select example" required>
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
             </div>
-            <div class="input-group-prepend">
-              <input id="motsClesRechercheRessources" class=" form-control motsClesRechercheRessources" name="motsClesRechercheRessources" type="text" aria-label="Saisie de mots clés" placeholder="Mots-clés" required="required">
-            </div>
-            <div class="input-group-append">
-              <button class="btn btn-primary btnRechercherRessources" type="submit">Recherche</button>
-            </div>
-          </div>
+          </div>         
+
+          <button type="submit" class="btn btn-primary btn-lg mb-3">Rechercher</button>
+
         </fieldset> 
       </form>
     </div>
@@ -96,7 +101,7 @@
   </div>
 
   <nav aria-label="pagination liste ressources">
-    <ul class="pagination justify-content-end">
+    <ul class="pagination justify-content-center">
       <li class="page-item disabled">
         <a class="page-link" href="#" tabindex="-1">Précédent</a>
       </li>
