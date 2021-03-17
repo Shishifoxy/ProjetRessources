@@ -1,0 +1,26 @@
+
+
+{% block title %}CategoriesRessources{% endblock %}
+
+{% block body %}
+    <h1>CategoriesRessources</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ categories_ressource.id }}</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{ categories_ressource.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('categories_ressources_index') }}">back to list</a>
+
+    <a href="{{ path('categories_ressources_edit', {'id': categories_ressource.id}) }}">edit</a>
+
+    {{ include('categories_ressources/_delete_form.html.twig') }}
+{% endblock %}

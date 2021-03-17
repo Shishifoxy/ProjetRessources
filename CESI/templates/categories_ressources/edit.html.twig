@@ -1,0 +1,13 @@
+
+
+{% block title %}Edit CategoriesRessources{% endblock %}
+
+{% block body %}
+    <h1>Edit CategoriesRessources</h1>
+
+    {{ include('categories_ressources/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('categories_ressources_index') }}">back to list</a>
+
+    {{ include('categories_ressources/_delete_form.html.twig') }}
+{% endblock %}

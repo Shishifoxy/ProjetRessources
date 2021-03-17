@@ -1,0 +1,11 @@
+
+
+{% block title %}New CategoriesRessources{% endblock %}
+
+{% block body %}
+    <h1>Create new CategoriesRessources</h1>
+
+    {{ include('categories_ressources/_form.html.twig') }}
+
+    <a href="{{ path('categories_ressources_index') }}">back to list</a>
+{% endblock %}

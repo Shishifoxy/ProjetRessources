@@ -1,0 +1,45 @@
+
+
+{% block title %}Ressources index{% endblock %}
+
+{% block body %}
+    <h1>Ressources index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Media</th>
+                <th>Private</th>
+                <th>Type</th>
+                <th>Catégorie</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for ressource in ressources %}
+            <tr>
+                <td>{{ ressource.id }}</td>
+                <td>{{ ressource.title }}</td>
+                <td>{{ ressource.description }}</td>
+                <td>{{ ressource.media }}</td>
+                <td>{{ ressource.private ? 'Yes' : 'No' }}</td>
+                <td>{{ ressource.typesressources }}</td>
+                <td>{{ ressource.categoriesressources }}</td>
+
+                <td>
+                    <a href="{{ path('ressources_show', {'id': ressource.id}) }}">show</a>
+                    <a href="{{ path('ressources_edit', {'id': ressource.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('ressources_new') }}">Create new</a>
+{% endblock %}

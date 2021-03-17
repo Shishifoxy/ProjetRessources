@@ -1,0 +1,35 @@
+
+
+{% block title %}TypesRessources index{% endblock %}
+
+{% block body %}
+    <h1>TypesRessources index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for types_ressource in types_ressources %}
+            <tr>
+                <td>{{ types_ressource.id }}</td>
+                <td>{{ types_ressource.name }}</td>
+                <td>
+                    <a href="{{ path('types_ressources_show', {'id': types_ressource.id}) }}">show</a>
+                    <a href="{{ path('types_ressources_edit', {'id': types_ressource.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('types_ressources_new') }}">Create new</a>
+{% endblock %}
