@@ -37,6 +37,12 @@ class Users
      */
     private $email;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Roles::class, inversedBy="users")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $roles;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +92,18 @@ class Users
     public function setEmail(string $email): self
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    public function getRoles(): ?Roles
+    {
+        return $this->roles;
+    }
+
+    public function setRoles(?Roles $roles): self
+    {
+        $this->roles = $roles;
 
         return $this;
     }
