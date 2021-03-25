@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\CategoriesRessources;
 use App\Form\CategoriesRessources1Type;
+use App\Form\CategoriesRessourcesType;
 use App\Repository\CategoriesRessourcesRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -31,7 +32,7 @@ class CategoriesRessourcesController extends AbstractController
     public function new(Request $request): Response
     {
         $categoriesRessource = new CategoriesRessources();
-        $form = $this->createForm(CategoriesRessources1Type::class, $categoriesRessource);
+        $form = $this->createForm(CategoriesRessourcesType::class, $categoriesRessource);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -63,7 +64,7 @@ class CategoriesRessourcesController extends AbstractController
      */
     public function edit(Request $request, CategoriesRessources $categoriesRessource): Response
     {
-        $form = $this->createForm(CategoriesRessources1Type::class, $categoriesRessource);
+        $form = $this->createForm(CategoriesRessourcesType::class, $categoriesRessource);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

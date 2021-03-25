@@ -84,7 +84,7 @@ class Roles
 
     public function __toString()
     {
-        return $this->lastname;
+        return $this->name;
 
     }
 }

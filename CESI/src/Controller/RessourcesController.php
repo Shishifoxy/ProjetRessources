@@ -38,6 +38,7 @@ class RessourcesController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($ressource);
             $entityManager->flush();
+            $this->addFlash('success', 'L\'ajout de la ressource a bien été effectué');
 
             return $this->redirectToRoute('ressources_index');
         }

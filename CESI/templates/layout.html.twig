@@ -7,13 +7,13 @@
         </div>
         <div class="ml-5 pr-4">
         <button type="button" class="btn btn-outline-info mx-2">Se connecter</button>
-        <button type="button" class="btn btn-outline-info">S'inscrire</button>
+        <a href="{{ path('users_new') }}" type="button" class="btn btn-outline-info">S'inscrire</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <div class="elementsnavtxt mx-5">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-5 mr-5 pr-5">
                 <li class="nav-item active">
-                    <a class="effecthover nav-link" href="/consultation-ressource">Ressources <span class="sr-only">(current)</span></a>
+                    <a class="effecthover nav-link" href="{{ path('ressources_index') }}">Ressources <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="effecthover nav-link ml-5 mr-5" href="#">Jeux<span class="sr-only">(current)</span></a>
@@ -35,4 +35,65 @@
             </form>
         </div>
     </nav>
+{% endblock %}
+
+{% block body %}
+{% endblock %}
+
+{% block footer %}
+        <footer id="footer" class="pt-3 bg-dark">
+            <div class="container">
+                <div class="row text-center">
+                    {# Info #}
+                    <div class="col mt-2">
+                        <strong class="footer-list-title text-uppercase text-light">Informations</strong>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="text-light" href="#">Info</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="#">CGU</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="#">A propos</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="#">RGPD</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="#">Flus RSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    {# Contact #}
+                    <div class="col mt-2">
+                        <strong class="footer-list-title text-uppercase text-light">Nous contacter</strong>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="text-light" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    {# Reseaux sociaux #}
+                    <div class="col mt-2">
+                        <strong class="footer-list-title text-uppercase text-light">Nos réseaux</strong>
+                        <ul class="list-unstyled list-group-horizontal list-group justify-content-center">
+                            <li>
+                                <a class="nav-link text-light reseau-fb" alt="facebook" href="https://www.facebook.com/gouvernement.fr"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-light reseau-twitter" alt="twitter" href="https://twitter.com/gouvernementfr"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-light reseau-linkedin" alt="linkedin" href="https://www.linkedin.com/company/gouvernementfr"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-light reseau-insta" alt="instagram" href="https://www.instagram.com/gouvernementfr/"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
 {% endblock %}

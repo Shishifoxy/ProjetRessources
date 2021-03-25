@@ -1,4 +1,63 @@
-{{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
-{{ form_end(form) }}
+
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+<div class="container form p-4">
+
+    {{ form_start(form) }}
+    <div class="row">
+        <div class="col-md-6 mt-4 mb-4">
+            <span class="text-danger">*</span>
+
+            {{ form_label(form.title, 'Titre') }}
+            {{ form_widget(form.title) }}
+        </div>
+
+        <div class="col-md-6 mt-4 mb-4">
+            <span class="text-danger">*</span>
+
+            {{ form_label(form.description, 'Description') }}
+            {{ form_widget(form.description) }}
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-6 mt-4 mb-4">
+            <span class="text-danger">*</span>
+
+            {{ form_label(form.media, 'Media') }}
+            {{ form_widget(form.media) }}
+        </div>
+
+        <div class="col-md-6 mt-4 mb-4">
+            <span class="text-light">*</span>
+
+            {{ form_label(form.private, 'La ressource est-elle privée ?') }}
+            {{ form_widget(form.private) }}
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mt-4 ">
+            <span class="text-danger">*</span>
+
+            {{ form_label(form.categoriesressources, 'Catégorie') }}
+            {{ form_widget(form.categoriesressources) }}
+        </div>
+
+        <div class="col-md-6 mt-4">
+<span class="text-danger">*</span>
+            {{ form_label(form.typesressources, 'Type') }}
+            {{ form_widget(form.typesressources) }}
+        </div>
+    </div>
+    <small class="text-danger font-italic font-weight-bold"> * Champs obligatoires</small>
+    <div class="form-row justify-content-center text-center m-2">
+        <button class="btn btn-info base-btn" type="submit">
+            {{ button_label|default('Créer la ressource') }}
+        </button>
+    </div>
+
+    {{ form_end(form) }}
+
+</div>

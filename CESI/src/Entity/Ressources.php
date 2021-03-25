@@ -28,7 +28,7 @@ class Ressources
     private $description;
 
     /**
-     * @ORM\Column(type="string", length=100, nullable=true)
+     * @ORM\Column(type="string", length=2000, nullable=true)
      */
     private $media;
 
