@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <h1 class="text-center my-5">Je crée mon compte</h1>
+    <div class="container ">
+        <div class="row justify-content-center">
+
+    {{ include('user/_form.html.twig') }}
+    </div>
+    <a href="{{ path('home') }}"><i class="text-info fas fa-arrow-left fa-3x"></i></a>
+
+    </div>
+{% endblock %}

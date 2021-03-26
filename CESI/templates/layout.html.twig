@@ -6,8 +6,8 @@
             <a class="navbar-brand ml-2" href="{{ path('home') }}"><img src="{{ asset('build/images/logo.png') }}" height="90" width="90" alt="logo_ressources" class="logo ressources"></a>
         </div>
         <div class="ml-5 pr-4">
-        <button type="button" class="btn btn-outline-info mx-2">Se connecter</button>
-        <a href="{{ path('users_new') }}" type="button" class="btn btn-outline-info">S'inscrire</a>
+        <a href="{{ path('app_login') }}" type="button" class="btn btn-outline-info mx-2">Se connecter</a>
+        <a href="{{ path('user_new') }}" type="button" class="btn btn-outline-info">S'inscrire</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <div class="elementsnavtxt mx-5">
@@ -30,7 +30,7 @@
                 </a>
 
             <form class="form-inline my-2 my-lg-0 pl-5">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search something here" aria-label="Search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Recherchez ici" aria-label="Search">
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>

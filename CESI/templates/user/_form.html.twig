@@ -1,0 +1,35 @@
+
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+<div class="form-register p-4">
+
+    {{ form_start(form) }}
+
+            <span class="text-danger">*</span>
+
+            {{ form_label(form.name, 'Nom d\'utilisateur') }}
+            {{ form_widget(form.name) }}
+
+
+            <span class="text-danger">*</span>
+
+            {{ form_label(form.roles, 'Role (catégorie provisoire)' )}}
+            {{ form_widget(form.roles) }}
+
+
+            <span class="text-danger">*</span>
+
+            {{ form_label(form.password, 'Mot de passe') }}
+            {{ form_widget(form.password) }}
+
+    <small class="text-danger font-italic font-weight-bold"> * Champs obligatoires</small>
+    <div class="form-row justify-content-center text-center m-2">
+        <button class="btn btn-info base-btn" type="submit">
+            {{ button_label|default('Créer mon compte') }}
+        </button>
+    </div>
+</div>
+
+
+
+    {{ form_end(form) }}
+

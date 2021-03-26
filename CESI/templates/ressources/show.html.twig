@@ -1,34 +1,30 @@
-
-
-{% block title %}Ressources{% endblock %}
+{% extends 'layout.html.twig' %}
 
 {% block body %}
-    <h1>Ressources</h1>
+    <h1 class="text-center my-5">Vous consultez actuellement la ressource : <span class="text-info text-italic" >{{ ressource.title }}</span></h1>
+<div class="text-center">
+    <img class="rounded" src="{{ ressource.media }}">
+</div>
+    <div class="row justify-content-center">
+    <div class="description-ressource my-5 text-center">
+        <p>{{ ressource.description }}</p>
+    </div>
+    </div>
+    <p class="text-center text-info font-italic font-weight-bold">Avez-vous trouvé cette ressource utile ?</p>
+    <div class="like text-center">
+        <a href="#"><i class="fas fa-thumbs-up text-success mr-3 fa-2x"></i></a>
+        <a href="#"><i class="fas fa-thumbs-down text-danger fa-2x"></i></a>
+    </div>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ ressource.id }}</td>
-            </tr>
-            <tr>
-                <th>Title</th>
-                <td>{{ ressource.title }}</td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>{{ ressource.description }}</td>
-            </tr>
-            <tr>
-                <th>Media</th>
-                <td>{{ ressource.media }}</td>
-            </tr>
-            <tr>
-                <th>Private</th>
-                <td>{{ ressource.private ? 'Yes' : 'No' }}</td>
-            </tr>
-        </tbody>
-    </table>
+
+
+
+
+
+
+
+
+
 
     <a href="{{ path('ressources_index') }}">back to list</a>
 

@@ -1,19 +1,18 @@
+{% extends 'base.html.twig' %}
 
-{% block title %}Users index{% endblock %}
+{% block title %}User index{% endblock %}
 
 {% block body %}
-    <h1>Users index</h1>
+    <h1>User index</h1>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Name</th>
-                <th>Lastname</th>
+                <th>Roles</th>
                 <th>Password</th>
-                <th>Email</th>
                 <th>actions</th>
-                <th>role</th>
             </tr>
         </thead>
         <tbody>
@@ -21,22 +20,20 @@
             <tr>
                 <td>{{ user.id }}</td>
                 <td>{{ user.name }}</td>
-                <td>{{ user.lastname }}</td>
+                <td>{{ user.roles.0 }}</td>
                 <td>{{ user.password }}</td>
-                <td>{{ user.email }}</td>
-                <td>{{ user.roles }}</td>
                 <td>
-                    <a href="{{ path('users_show', {'id': user.id}) }}">show</a>
-                    <a href="{{ path('users_edit', {'id': user.id}) }}">edit</a>
+                    <a href="{{ path('user_show', {'id': user.id}) }}">show</a>
+                    <a href="{{ path('user_edit', {'id': user.id}) }}">edit</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="6">no records found</td>
+                <td colspan="5">no records found</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('users_new') }}">Create new</a>
+    <a href="{{ path('user_new') }}">Create new</a>
 {% endblock %}
